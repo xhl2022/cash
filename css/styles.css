@@ -5815,12 +5815,16 @@ textarea.form-control-lg {
   transition: transform 0.6s ease-in-out;
 }
 /* koushin 2023.11.26 add */
+#casCarousel {
+  height: 62rem;
+}
+
 .carousel-item img {  
-  object-fit: cover;
-  object-position: center;
-  overflow: hidden;
+  display: block;
+  white-space: 100%;
   height:62rem;
 }
+
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
     transition: none;
