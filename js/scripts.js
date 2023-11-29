@@ -56,7 +56,6 @@ window.addEventListener('DOMContentLoaded', event => {
 $(function(){//相当于onload
     $(window).on("resize",function(){     // 监听屏幕事件
         var windowWidth=$(window).width();     //获取屏幕尺寸
-        console.log(windowWidth);
         var isSmallScreen = windowWidth < 768;// 返回布尔值
         // 小屏幕追加img标签
         if (isSmallScreen) {
@@ -65,7 +64,6 @@ $(function(){//相当于onload
                 var item = $(this);
                 // 当前自定义项目中 存储的图片路径
                 var imgSrc = isSmallScreen?item.data("image-xs"):item.data("image-lg")
-                console.log(imgSrc);
                 item.html('<a href="javascript:;" class="mobileImg"><img src="'+imgSrc+'" alt="..."></a>');
             })
         } else {
@@ -74,7 +72,6 @@ $(function(){//相当于onload
                 var item = $(this);
                 // 当前自定义项目中 存储的图片路径
                 var imgSrc = isSmallScreen?item.data("image-xs"):item.data("image-lg")
-                console.log(imgSrc);
                 item.html($('<a href="javascript:;" class="pcImg"></a>').css("background-image","url('"+imgSrc+"')"));
             })
         }
