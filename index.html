@@ -15,6 +15,12 @@
         <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" /> -->
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Bootstrap core JS-->
+        <script src="js/jquery.min.js"></script>
+        <!-- Bootstrap core JS-->
+        <script src="js/bootstrap.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -45,14 +51,14 @@
             </div>
             <!-- 轮播图片 -->
             <div class="carousel-inner">
-                <div class="carousel-item active" style="background-size:cover;">
-                    <img src="assets/img/header-bg.jpg" class="d-block  w-100 img-fluid" style="width:100%">
+                <div class="carousel-item active" data-image-lg="assets/img/header-bg.jpg" data-image-xs="assets/img/header-bg-s.jpg">
+                    <!-- <img src="assets/img/header-bg.jpg" class="d-block  w-100 img-fluid" style="width:100%"> -->
                 </div>
-                <div class="carousel-item" style=" background-size:cover;">
-                    <img src="assets/img/cas.jpeg" class="d-block  w-100 img-fluid" style="width:100%">
+                <div class="carousel-item"  data-image-lg="assets/img/bg-masthead.jpg" data-image-xs="assets/img/bg-masthead-s.jpg">
+                    <!-- <img src="assets/img/cas.jpeg" class="d-block  w-100 img-fluid" style="width:100%"> -->
                 </div>
-                <div class="carousel-item" style="background-size:cover;">
-                    <img src="assets/img/bao.jpeg" class="d-block  w-100 img-fluid" style="width:100%">
+                <div class="carousel-item"  data-image-lg="assets/img/cas.jpeg" data-image-xs="assets/img/cas-s.jpg">
+                    <!-- <img src="assets/img/bao.jpeg" class="d-block  w-100 img-fluid" style="width:100%"> -->
                 </div>
             </div>
             <!-- 左右切换按钮 -->
@@ -65,9 +71,5 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- Bootstrap core JS-->
-        <script src="js/bootstrap.js"></script>
     </body>
 </html>
