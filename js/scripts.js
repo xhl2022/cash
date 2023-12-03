@@ -76,4 +76,17 @@ $(function(){//相当于onload
             })
         }
     }).trigger("resize");
+
+    var userAgent = window.navigator.userAgent;
+    // 检查是否是Chrome
+    if (userAgent.includes("Chrome") && userAgent.includes("Safari") && !userAgent.includes("Edg")) {
+        console.log("This is Chrome");
+        // $('#casCarousel').css("padding-top","72px");
+    } else if (userAgent.includes("Safari") && !userAgent.includes("Chrome")) {
+        console.log("This is Safari");
+        // $('#casCarousel').css("padding-top","45px");
+
+    } else {
+        console.log("This is another browser");
+    }
 })
